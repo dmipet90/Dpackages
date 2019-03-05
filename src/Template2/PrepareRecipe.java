@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Template2;
+
+/**
+ *
+ * @author user
+ */
+public abstract class PrepareRecipe {
+
+    final void showRecipe() {
+        boilWater();
+        brew();
+        pourInCup();
+        addIngredients();
+    }
+
+    public abstract void brew();
+
+    public abstract void addIngredients();
+
+    public void boilWater() {
+        System.out.println("Boiling Water");
+    }
+
+    public void pourInCup() {
+        System.out.println("Pouring into cup");
+    }
+}
